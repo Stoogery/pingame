@@ -14,4 +14,5 @@ build/pingame.o: src/pingame.c include/pingame.h
 
 clean:
 	rm -f bin/pingame
-	rm -f build/*
+	rm -f build/trie.o
+	rm -f build/pingame.o
