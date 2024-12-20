@@ -1,0 +1,29 @@
+    0
+   0 0
+  0 _ 0 
+ 0 0 0 0
+0 0 0 0 0
+
+b10001000000
+b00010000000
+
+int point_to_bit_index(int x, int y)
+{
+	x++;
+	y++;
+	return (y * (y - 1) / 2 + x) - 1;
+}
+
+
+row: x, "column": y
+
+top-left-diagonal pin to cross:
+x = f(x)
+y = g(y)
+
+f(x) = x - 1
+g(y) = y - 1
+
+bit_index(x, y) = (y)(y-1)/2 + x 
+
+bit_index_inv(b) = some c code
